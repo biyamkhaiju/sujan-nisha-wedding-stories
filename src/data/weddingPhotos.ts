@@ -1,4 +1,7 @@
-import heroCouple from "@/assets/wedding/hero-couple.jpg";
+import heroTempleBanner from "@/assets/wedding/hero-temple-banner.jpg";
+import rosesLeft from "@/assets/wedding/roses-left.png";
+import rosesRight from "@/assets/wedding/roses-right.png";
+import crimsonSilkCorner from "@/assets/wedding/crimson-silk-corner.png";
 import coupleEmbrace from "@/assets/wedding/couple-embrace.jpg";
 import coupleLaughter from "@/assets/wedding/couple-laughter.jpg";
 import familyPortrait from "@/assets/wedding/family-portrait.jpg";
@@ -25,7 +28,10 @@ export interface WeddingPhoto {
 export const COUPLE_NAMES = "Sujan & Nisha";
 export const GALLERY_SUBTITLE =
   "Two souls, one beautiful journey — a lifetime of memories.";
-export const HERO_BANNER_IMAGE = heroCouple;
+export const HERO_BANNER_IMAGE = heroTempleBanner;
+export const ROSES_LEFT_IMAGE = rosesLeft;
+export const ROSES_RIGHT_IMAGE = rosesRight;
+export const CRIMSON_SILK_IMAGE = crimsonSilkCorner;
 
 export const GALLERY_CATEGORIES: readonly GalleryFilter[] = [
   "All",
@@ -54,12 +60,12 @@ export const WEDDING_PHOTOS: readonly WeddingPhoto[] = [
     aspect: "landscape",
   },
   {
-    id: "celebrations-dance",
-    src: celebrationsDance,
-    title: "First Twirl Under Sparklers",
-    caption: "Dancing hand-in-hand beneath marigold chandeliers and starlight.",
-    category: "Celebrations",
-    aspect: "portrait-soft",
+    id: "ceremony-hands",
+    src: ceremonyHands,
+    title: "Sacred Vows by the Fire",
+    caption: "Henna-adorned hands joined tenderly above the sacred Agni.",
+    category: "Ceremony",
+    aspect: "landscape",
   },
   {
     id: "friends-bridesmaids",
@@ -70,20 +76,20 @@ export const WEDDING_PHOTOS: readonly WeddingPhoto[] = [
     aspect: "landscape-tall",
   },
   {
-    id: "ceremony-hands",
-    src: ceremonyHands,
-    title: "Sacred Vows by the Fire",
-    caption: "Henna-adorned hands joined tenderly above the sacred Agni.",
-    category: "Ceremony",
-    aspect: "landscape",
-  },
-  {
     id: "ceremony-sindoor",
     src: ceremonySindoor,
     title: "The Sindoor Blessing",
     caption: "A timeless vow sealed beneath floral drapes and oil lamps.",
     category: "Ceremony",
     aspect: "landscape-tall",
+  },
+  {
+    id: "couple-laughter",
+    src: coupleLaughter,
+    title: "Shower of Rose Petals",
+    caption: "Unfiltered joy beneath falling crimson petals at golden hour.",
+    category: "Couple",
+    aspect: "portrait",
   },
   {
     id: "family-blessings",
@@ -94,12 +100,12 @@ export const WEDDING_PHOTOS: readonly WeddingPhoto[] = [
     aspect: "landscape-tall",
   },
   {
-    id: "couple-laughter",
-    src: coupleLaughter,
-    title: "Shower of Rose Petals",
-    caption: "Unfiltered joy beneath falling crimson petals at golden hour.",
-    category: "Couple",
-    aspect: "portrait",
+    id: "celebrations-dance",
+    src: celebrationsDance,
+    title: "First Twirl Under Sparklers",
+    caption: "Dancing hand-in-hand beneath marigold chandeliers and starlight.",
+    category: "Celebrations",
+    aspect: "portrait-soft",
   },
   {
     id: "celebrations-feast",

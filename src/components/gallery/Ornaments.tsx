@@ -50,16 +50,50 @@ export function CornerFiligree({
 
   return (
     <svg
-      viewBox="0 0 36 36"
+      viewBox="0 0 44 44"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.3"
+      strokeWidth="1.35"
       aria-hidden="true"
-      className={`pointer-events-none absolute h-7 w-7 text-gold-bright/85 transition-opacity duration-500 ${transforms[position]}`}
+      className={`pointer-events-none absolute h-8 w-8 text-gold-bright/90 drop-shadow-xs transition-opacity duration-500 ${transforms[position]}`}
     >
-      <path d="M2 24V8C2 4.7 4.7 2 8 2H24" strokeLinecap="round" />
-      <path d="M6 15V9.5C6 7.5 7.5 6 9.5 6H15" strokeLinecap="round" opacity="0.7" />
-      <circle cx="8" cy="8" r="1.3" fill="currentColor" stroke="none" />
+      <path d="M2 30V10C2 5.6 5.6 2 10 2H30" strokeLinecap="round" />
+      <path d="M6 21C6 12 12 6 21 6" strokeLinecap="round" opacity="0.85" />
+      <path d="M9.5 14.5C9.5 11.2 11.2 9.5 14.5 9.5" strokeLinecap="round" opacity="0.75" />
+      <circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+export function HeartSwirlFlourish({ className = "h-7 w-28" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 132 34"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.25"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M2 26C14 26 24 23 32 16C36 12 40 7 37 4C34.5 1.5 30 3.5 29 7.5C28 3.5 23.5 1.5 21 4C18 7 22 14 29 19C35 23 44 26 56 22C69 17.5 84 14 104 17.5C114 19.2 122 22 130 23" />
+    </svg>
+  );
+}
+
+export function FooterSwirl({ className = "h-3.5 w-14" }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 64 16"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.2"
+      strokeLinecap="round"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M2 9C6 5 11 5 11 9C11 12 6 12 4 9.5C9 7 22 7 38 8.5C48 9.5 56 9 62 7" />
     </svg>
   );
 }
