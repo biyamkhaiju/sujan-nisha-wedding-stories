@@ -19,18 +19,15 @@ interface CategoryFilterBarProps {
   onSelect: (category: GalleryFilter) => void;
 }
 
-export function CategoryFilterBar({
-  activeCategory,
-  onSelect,
-}: CategoryFilterBarProps) {
+export function CategoryFilterBar({ activeCategory, onSelect }: CategoryFilterBarProps) {
   return (
     <nav
       id="gallery"
       aria-label="Wedding photo categories"
-      className="relative z-30 mx-auto max-w-[1400px] px-4 pt-4 pb-5 sm:px-8 sm:pt-5 sm:pb-6 lg:px-14"
+      className="relative z-30 mx-auto max-w-[1400px] px-14 pt-6 pb-5 sm:px-24 sm:pt-5 sm:pb-6 md:px-28 lg:px-32"
     >
       <div className="flex items-center justify-center gap-2.5 sm:gap-3.5">
-        <div aria-hidden="true" className="hidden flex-1 items-center gap-2 md:flex">
+        <div aria-hidden="true" className="hidden flex-1 items-center gap-2 xl:flex">
           <span className="h-px flex-1 bg-gradient-to-r from-transparent via-gold-deep/45 to-gold-deep/70" />
           <DiamondAccent className="h-2.5 w-2.5 shrink-0 text-primary/85" />
         </div>
@@ -53,7 +50,7 @@ export function CategoryFilterBar({
                   role="tab"
                   aria-selected={isActive}
                   onClick={() => onSelect(category)}
-                  className={`relative inline-flex cursor-pointer items-center gap-1.5 rounded-full border px-3.5 py-1.5 font-serif text-sm font-semibold tracking-wide transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:gap-2 sm:px-5 sm:py-1.5 sm:text-[15px] ${
+                  className={`relative inline-flex cursor-pointer items-center gap-1.5 rounded-full border px-3 py-1 font-serif text-[13px] font-semibold tracking-wide transition-colors duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring sm:gap-1.5 sm:px-3.5 sm:py-1.5 sm:text-sm lg:gap-2 lg:px-5 lg:text-[15px] ${
                     isActive
                       ? "border-primary text-primary-foreground"
                       : "border-gold-deep/50 bg-card/90 text-foreground/90 hover:border-primary/60 hover:bg-accent/80 hover:text-primary"
@@ -78,7 +75,7 @@ export function CategoryFilterBar({
           })}
         </div>
 
-        <div aria-hidden="true" className="hidden flex-1 items-center gap-2 md:flex">
+        <div aria-hidden="true" className="hidden flex-1 items-center gap-2 xl:flex">
           <DiamondAccent className="h-2.5 w-2.5 shrink-0 text-primary/85" />
           <span className="h-px flex-1 bg-gradient-to-l from-transparent via-gold-deep/45 to-gold-deep/70" />
         </div>

@@ -26,8 +26,7 @@ export interface WeddingPhoto {
 }
 
 export const COUPLE_NAMES = "Sujan & Nisha";
-export const GALLERY_SUBTITLE =
-  "Two souls, one beautiful journey — a lifetime of memories.";
+export const GALLERY_SUBTITLE = "Two souls, one beautiful journey — a lifetime of memories.";
 export const HERO_BANNER_IMAGE = heroTempleBanner;
 export const ROSES_LEFT_IMAGE = rosesLeft;
 export const ROSES_RIGHT_IMAGE = rosesRight;
@@ -133,11 +132,7 @@ export function filterPhotosByCategory(
   return photos.filter((photo) => photo.category === category);
 }
 
-export function getAdjacentPhotoIndex(
-  currentIndex: number,
-  total: number,
-  step: 1 | -1,
-): number {
+export function getAdjacentPhotoIndex(currentIndex: number, total: number, step: 1 | -1): number {
   if (total <= 0) return -1;
   return (currentIndex + step + total) % total;
 }

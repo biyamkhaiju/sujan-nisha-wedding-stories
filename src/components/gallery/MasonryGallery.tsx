@@ -52,7 +52,7 @@ function GalleryPhotoFrame({
           src={photo.src}
           alt={photo.title}
           loading={index < 6 ? "eager" : "lazy"}
-          className={`block object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.05] ${imgClassName}`}
+          className={`warm-photo-grade block object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.05] ${imgClassName}`}
         />
 
         <div className="pointer-events-none absolute inset-1.5 rounded-lg border border-gold-bright/30" />
@@ -82,11 +82,7 @@ function GalleryPhotoFrame({
   );
 }
 
-export function MasonryGallery({
-  photos,
-  activeCategory,
-  onSelectPhoto,
-}: MasonryGalleryProps) {
+export function MasonryGallery({ photos, activeCategory, onSelectPhoto }: MasonryGalleryProps) {
   const isShowcaseAll = activeCategory === "All" && photos.length >= 6;
   const featuredPhotos = isShowcaseAll ? photos.slice(0, 6) : [];
   const remainingPhotos = isShowcaseAll ? photos.slice(6) : photos;
@@ -94,7 +90,7 @@ export function MasonryGallery({
   return (
     <section
       aria-label={`${activeCategory} wedding photographs`}
-      className="relative z-10 mx-auto max-w-[1400px] px-4 pb-10 sm:px-6 md:px-7 lg:px-10"
+      className="relative z-10 mx-auto max-w-[1400px] px-4 pb-6 sm:px-6 md:px-7 lg:px-10"
     >
       <AnimatePresence mode="wait">
         <motion.div

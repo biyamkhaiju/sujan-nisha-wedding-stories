@@ -134,7 +134,8 @@ export function FullscreenLightbox({
           <div className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 border-b border-gold/20 px-4 py-3.5 sm:px-8 sm:py-4">
             <div className="flex min-w-0 items-center gap-3">
               <span className="shrink-0 font-sans text-xs tracking-[0.22em] text-gold-bright">
-                {String(activeIndex + 1).padStart(2, "0")} / {String(photos.length).padStart(2, "0")}
+                {String(activeIndex + 1).padStart(2, "0")} /{" "}
+                {String(photos.length).padStart(2, "0")}
               </span>
               <DiamondAccent className="h-1.5 w-1.5 shrink-0 text-gold/80" />
               <span className="truncate font-serif text-sm tracking-[0.22em] text-ivory/90 uppercase">
@@ -191,7 +192,9 @@ export function FullscreenLightbox({
                 transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
                 drag={isZoomed ? true : "x"}
                 dragConstraints={
-                  isZoomed ? { top: -220, bottom: 220, left: -260, right: 260 } : { left: 0, right: 0 }
+                  isZoomed
+                    ? { top: -220, bottom: 220, left: -260, right: 260 }
+                    : { left: 0, right: 0 }
                 }
                 dragElastic={isZoomed ? 0.12 : 0.22}
                 onDragEnd={handleDragEnd}
@@ -207,7 +210,7 @@ export function FullscreenLightbox({
                   draggable={false}
                   animate={{ scale: isZoomed ? 1.85 : 1 }}
                   transition={{ type: "spring", stiffness: 260, damping: 28 }}
-                  className="max-h-[70vh] max-w-[92vw] rounded-lg border border-gold/40 object-contain shadow-2xl sm:max-h-[74vh] sm:max-w-[80vw]"
+                  className="warm-photo-grade max-h-[70vh] max-w-[92vw] rounded-lg border border-gold/40 object-contain shadow-2xl sm:max-h-[74vh] sm:max-w-[80vw]"
                 />
               </motion.div>
             </AnimatePresence>
@@ -258,7 +261,7 @@ export function FullscreenLightbox({
                         <img
                           src={thumb.src}
                           alt=""
-                          className="h-full w-full object-cover"
+                          className="warm-photo-grade h-full w-full object-cover"
                         />
                       </button>
                     );

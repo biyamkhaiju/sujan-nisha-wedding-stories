@@ -85,46 +85,46 @@
 
 :root {
   --radius: 0.75rem;
-  --background: oklch(0.966 0.02 80);
-  --foreground: oklch(0.23 0.072 18);
-  --card: oklch(0.982 0.015 82);
-  --card-foreground: oklch(0.23 0.072 18);
-  --popover: oklch(0.982 0.015 82);
-  --popover-foreground: oklch(0.23 0.072 18);
-  --primary: oklch(0.31 0.13 18);
-  --primary-foreground: oklch(0.972 0.018 82);
-  --secondary: oklch(0.942 0.026 78);
-  --secondary-foreground: oklch(0.28 0.085 18);
-  --muted: oklch(0.935 0.025 78);
-  --muted-foreground: oklch(0.45 0.055 24);
-  --accent: oklch(0.918 0.042 80);
-  --accent-foreground: oklch(0.25 0.085 18);
-  --destructive: oklch(0.52 0.21 24);
-  --destructive-foreground: oklch(0.98 0.01 82);
-  --border: oklch(0.81 0.068 78);
-  --input: oklch(0.81 0.068 78);
-  --ring: oklch(0.68 0.115 78);
-  --chart-1: oklch(0.35 0.14 18);
-  --chart-2: oklch(0.74 0.12 80);
-  --chart-3: oklch(0.48 0.16 22);
-  --chart-4: oklch(0.62 0.10 72);
-  --chart-5: oklch(0.84 0.09 82);
-  --sidebar: oklch(0.955 0.022 80);
-  --sidebar-foreground: oklch(0.23 0.072 18);
-  --sidebar-primary: oklch(0.31 0.13 18);
-  --sidebar-primary-foreground: oklch(0.972 0.018 82);
-  --sidebar-accent: oklch(0.918 0.042 80);
-  --sidebar-accent-foreground: oklch(0.25 0.085 18);
-  --sidebar-border: oklch(0.81 0.068 78);
-  --sidebar-ring: oklch(0.68 0.115 78);
-  --velvet: oklch(0.21 0.092 16);
-  --velvet-deep: oklch(0.135 0.062 15);
-  --crimson: oklch(0.39 0.16 20);
-  --gold: oklch(0.75 0.115 80);
-  --gold-bright: oklch(0.88 0.105 85);
-  --gold-deep: oklch(0.56 0.102 72);
-  --ivory: oklch(0.968 0.02 80);
-  --ivory-soft: oklch(0.945 0.026 78);
+  --background: oklch(0.952 0.036 74);
+  --foreground: oklch(0.22 0.082 18);
+  --card: oklch(0.974 0.028 76);
+  --card-foreground: oklch(0.22 0.082 18);
+  --popover: oklch(0.974 0.028 76);
+  --popover-foreground: oklch(0.22 0.082 18);
+  --primary: oklch(0.31 0.148 18);
+  --primary-foreground: oklch(0.974 0.026 78);
+  --secondary: oklch(0.93 0.042 73);
+  --secondary-foreground: oklch(0.27 0.095 18);
+  --muted: oklch(0.922 0.04 72);
+  --muted-foreground: oklch(0.43 0.068 24);
+  --accent: oklch(0.905 0.062 74);
+  --accent-foreground: oklch(0.24 0.095 18);
+  --destructive: oklch(0.52 0.22 24);
+  --destructive-foreground: oklch(0.98 0.015 80);
+  --border: oklch(0.79 0.088 73);
+  --input: oklch(0.79 0.088 73);
+  --ring: oklch(0.69 0.135 74);
+  --chart-1: oklch(0.35 0.155 18);
+  --chart-2: oklch(0.75 0.14 76);
+  --chart-3: oklch(0.48 0.18 22);
+  --chart-4: oklch(0.62 0.12 70);
+  --chart-5: oklch(0.84 0.11 78);
+  --sidebar: oklch(0.942 0.038 74);
+  --sidebar-foreground: oklch(0.22 0.082 18);
+  --sidebar-primary: oklch(0.31 0.148 18);
+  --sidebar-primary-foreground: oklch(0.974 0.026 78);
+  --sidebar-accent: oklch(0.905 0.062 74);
+  --sidebar-accent-foreground: oklch(0.24 0.095 18);
+  --sidebar-border: oklch(0.79 0.088 73);
+  --sidebar-ring: oklch(0.69 0.135 74);
+  --velvet: oklch(0.21 0.105 17);
+  --velvet-deep: oklch(0.135 0.072 16);
+  --crimson: oklch(0.41 0.182 22);
+  --gold: oklch(0.76 0.142 76);
+  --gold-bright: oklch(0.89 0.128 80);
+  --gold-deep: oklch(0.57 0.126 68);
+  --ivory: oklch(0.954 0.036 74);
+  --ivory-soft: oklch(0.928 0.044 72);
   --shadow-frame: 0 10px 26px -12px color-mix(in oklab, var(--velvet) 38%, transparent), 0 1px 4px color-mix(in oklab, var(--gold-deep) 24%, transparent);
   --shadow-frame-hover: 0 20px 42px -14px color-mix(in oklab, var(--velvet) 54%, transparent), 0 0 0 1.5px color-mix(in oklab, var(--gold-bright) 80%, transparent);
   --shadow-pill-active: 0 6px 18px -5px color-mix(in oklab, var(--primary) 60%, transparent), inset 0 1px 0 color-mix(in oklab, var(--gold-bright) 28%, transparent);
@@ -170,19 +170,19 @@
 @utility parchment-surface {
   background-color: var(--ivory);
   background-image:
-    radial-gradient(circle at 50% 0%, color-mix(in oklab, var(--gold-bright) 22%, transparent), transparent 55%),
-    radial-gradient(circle at 0% 100%, color-mix(in oklab, var(--gold) 18%, transparent), transparent 45%),
-    radial-gradient(circle at 100% 100%, color-mix(in oklab, var(--gold) 18%, transparent), transparent 45%),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23c8a464' stroke-width='0.75' opacity='0.18'%3E%3Cpath d='M48 6 C58 20 76 38 90 48 C76 58 58 76 48 90 C38 76 20 58 6 48 C20 38 38 20 48 6 Z'/%3E%3Cpath d='M48 22 C54 32 64 42 74 48 C64 54 54 64 48 74 C42 64 32 54 22 48 C32 42 42 32 48 22 Z'/%3E%3Ccircle cx='48' cy='48' r='4.5'/%3E%3Cpath d='M0 0 C12 10 18 18 24 24 M96 0 C84 10 78 18 72 24 M0 96 C12 86 18 78 24 72 M96 96 C84 86 78 78 72 72'/%3E%3C/g%3E%3C/svg%3E");
+    radial-gradient(circle at 50% 0%, color-mix(in oklab, var(--gold-bright) 34%, transparent), transparent 58%),
+    radial-gradient(circle at 0% 100%, color-mix(in oklab, var(--gold) 26%, transparent), transparent 48%),
+    radial-gradient(circle at 100% 100%, color-mix(in oklab, var(--gold) 26%, transparent), transparent 48%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23c49246' stroke-width='0.75' opacity='0.22'%3E%3Cpath d='M48 6 C58 20 76 38 90 48 C76 58 58 76 48 90 C38 76 20 58 6 48 C20 38 38 20 48 6 Z'/%3E%3Cpath d='M48 22 C54 32 64 42 74 48 C64 54 54 64 48 74 C42 64 32 54 22 48 C32 42 42 32 48 22 Z'/%3E%3Ccircle cx='48' cy='48' r='4.5'/%3E%3Cpath d='M0 0 C12 10 18 18 24 24 M96 0 C84 10 78 18 72 24 M0 96 C12 86 18 78 24 72 M96 96 C84 86 78 78 72 72'/%3E%3C/g%3E%3C/svg%3E");
   background-size: auto, auto, auto, 96px 96px;
 }
 
 @utility hero-velvet-scrim {
   background:
     radial-gradient(
-      ellipse 46% 78% at 34% 52%,
-      color-mix(in oklab, var(--velvet-deep) 68%, transparent) 0%,
-      color-mix(in oklab, var(--velvet) 32%, transparent) 62%,
+      ellipse 48% 82% at 32% 52%,
+      color-mix(in oklab, var(--velvet-deep) 74%, transparent) 0%,
+      color-mix(in oklab, var(--velvet) 38%, transparent) 64%,
       transparent 100%
     ),
     linear-gradient(
@@ -192,6 +192,20 @@
       transparent 82%,
       color-mix(in oklab, var(--velvet-deep) 36%, transparent) 100%
     );
+}
+
+@utility warm-photo-grade {
+  filter: saturate(1.14) contrast(1.04) sepia(0.07) brightness(1.01);
+}
+
+@utility silk-fade-left {
+  -webkit-mask-image: linear-gradient(90deg, black 0%, black 56%, transparent 98%);
+  mask-image: linear-gradient(90deg, black 0%, black 56%, transparent 98%);
+}
+
+@utility silk-fade-right {
+  -webkit-mask-image: linear-gradient(270deg, black 0%, black 60%, transparent 98%);
+  mask-image: linear-gradient(270deg, black 0%, black 60%, transparent 98%);
 }
 
 @utility nav-pill-gallery {

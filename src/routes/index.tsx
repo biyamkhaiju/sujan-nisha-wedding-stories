@@ -68,20 +68,17 @@ function Index() {
           src={ROSES_LEFT_IMAGE}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -top-14 -left-7 z-20 w-28 select-none drop-shadow-md sm:-top-20 sm:-left-6 sm:w-40 lg:-top-28 lg:-left-6 lg:w-52"
+          className="warm-photo-grade pointer-events-none absolute -top-9 -left-6 z-20 w-20 select-none drop-shadow-md sm:-top-14 sm:-left-7 sm:w-28 md:-top-18 md:-left-6 md:w-36 lg:-top-24 lg:-left-6 lg:w-48"
         />
         <img
           src={ROSES_RIGHT_IMAGE}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute -top-14 -right-7 z-20 w-28 select-none drop-shadow-md sm:-top-20 sm:-right-6 sm:w-40 lg:-top-28 lg:-right-6 lg:w-52"
+          className="warm-photo-grade pointer-events-none absolute -top-9 -right-6 z-20 w-20 select-none drop-shadow-md sm:-top-14 sm:-right-7 sm:w-28 md:-top-18 md:-right-6 md:w-36 lg:-top-24 lg:-right-6 lg:w-48"
         />
 
-        <main className="relative z-10 flex-1">
-          <CategoryFilterBar
-            activeCategory={activeCategory}
-            onSelect={handleSelectCategory}
-          />
+        <main className="relative z-10">
+          <CategoryFilterBar activeCategory={activeCategory} onSelect={handleSelectCategory} />
 
           <MasonryGallery
             photos={filteredPhotos}
@@ -90,42 +87,44 @@ function Index() {
           />
         </main>
 
-        <img
-          src={ROSES_LEFT_IMAGE}
-          alt=""
-          aria-hidden="true"
-          className="pointer-events-none absolute bottom-1 -left-7 z-20 w-28 select-none drop-shadow-md sm:bottom-2 sm:-left-6 sm:w-36 lg:bottom-2 lg:-left-5 lg:w-48"
-        />
-        <img
-          src={CRIMSON_SILK_IMAGE}
-          alt=""
-          aria-hidden="true"
-          className="pointer-events-none absolute bottom-0 -left-16 z-10 w-56 -scale-x-100 select-none opacity-95 sm:-left-12 sm:w-72 lg:-left-8 lg:w-96"
-        />
-        <img
-          src={CRIMSON_SILK_IMAGE}
-          alt=""
-          aria-hidden="true"
-          className="pointer-events-none absolute right-0 bottom-0 z-20 w-44 select-none sm:w-64 lg:w-80 xl:w-96"
-        />
+        <footer className="relative mt-auto w-full overflow-x-clip pt-10 pb-8 sm:pt-12 sm:pb-9 lg:pt-14 lg:pb-10">
+          <img
+            src={ROSES_LEFT_IMAGE}
+            alt=""
+            aria-hidden="true"
+            className="warm-photo-grade pointer-events-none absolute bottom-1 -left-6 z-20 w-20 select-none drop-shadow-md sm:bottom-1 sm:-left-6 sm:w-28 md:-left-5 md:w-36 lg:w-44"
+          />
+          <img
+            src={CRIMSON_SILK_IMAGE}
+            alt=""
+            aria-hidden="true"
+            className="warm-photo-grade silk-fade-right pointer-events-none absolute bottom-0 -left-14 z-10 w-44 -scale-x-100 select-none opacity-95 sm:-left-10 sm:w-56 md:-left-8 md:w-72 lg:w-80"
+          />
+          <img
+            src={CRIMSON_SILK_IMAGE}
+            alt=""
+            aria-hidden="true"
+            className="warm-photo-grade silk-fade-right pointer-events-none absolute right-0 bottom-0 z-10 w-36 select-none opacity-95 sm:w-48 md:w-56 lg:w-72"
+          />
 
-        <footer className="relative z-30 mx-auto w-full max-w-[1400px] px-6 pt-2 pb-6 sm:px-10 sm:pb-7">
-          <div className="grid grid-cols-1 items-center gap-3 md:grid-cols-3">
-            <div aria-hidden="true" className="hidden md:block" />
+          <div className="relative z-30 mx-auto max-w-[1400px] px-6 sm:px-10">
+            <div className="grid grid-cols-1 items-center gap-3 md:grid-cols-[1fr_auto_1fr]">
+              <div aria-hidden="true" className="hidden md:block" />
 
-            <div className="flex items-center justify-center gap-3 text-gold-deep">
-              <span className="h-px w-20 bg-gradient-to-r from-transparent via-gold-deep/65 to-gold-deep sm:w-28" />
-              <DiamondAccent className="h-1.5 w-1.5 text-primary/80" />
-              <LotusIcon className="h-6 w-10 text-primary" />
-              <DiamondAccent className="h-1.5 w-1.5 text-primary/80" />
-              <span className="h-px w-20 bg-gradient-to-l from-transparent via-gold-deep/65 to-gold-deep sm:w-28" />
-            </div>
+              <div className="flex items-center justify-center gap-3 text-gold-deep">
+                <span className="h-px w-16 bg-gradient-to-r from-transparent via-gold-deep/65 to-gold-deep sm:w-24 lg:w-28" />
+                <DiamondAccent className="h-1.5 w-1.5 text-primary/80" />
+                <LotusIcon className="h-6 w-10 text-primary" />
+                <DiamondAccent className="h-1.5 w-1.5 text-primary/80" />
+                <span className="h-px w-16 bg-gradient-to-l from-transparent via-gold-deep/65 to-gold-deep sm:w-24 lg:w-28" />
+              </div>
 
-            <div className="flex items-center justify-center gap-2 md:justify-end md:pr-24 lg:pr-32">
-              <p className="font-serif text-xl italic text-primary sm:text-2xl">
-                A beginning of forever
-              </p>
-              <FooterSwirl className="h-3.5 w-12 shrink-0 text-primary/85" />
+              <div className="flex items-center justify-center gap-2 md:justify-end md:pr-44 lg:pr-56 xl:pr-64">
+                <p className="whitespace-nowrap font-serif text-lg italic text-primary sm:text-xl lg:text-2xl">
+                  A beginning of forever
+                </p>
+                <FooterSwirl className="h-3.5 w-11 shrink-0 text-primary/85 lg:w-12" />
+              </div>
             </div>
           </div>
         </footer>
@@ -176,8 +175,8 @@ function Index() {
                 “{GALLERY_SUBTITLE}”
               </p>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                A curated keepsake of our sacred mandap rituals, elders&apos; blessings,
-                beloved family portraits, and joyful evenings surrounded by our dearest friends.
+                A curated keepsake of our sacred mandap rituals, elders&apos; blessings, beloved
+                family portraits, and joyful evenings surrounded by our dearest friends.
               </p>
               <HeartSwirlFlourish className="mx-auto mt-4 h-6 w-24 text-gold-deep" />
             </motion.div>
